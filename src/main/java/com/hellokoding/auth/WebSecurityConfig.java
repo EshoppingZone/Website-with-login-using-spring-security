@@ -37,6 +37,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
       return authenticationManager();
     }
     
+    
+    
     @RequestMapping({ "/user", "/me" })
 	public Map<String, String> user(Principal principal) {
 		Map<String, String> map = new LinkedHashMap<>();
